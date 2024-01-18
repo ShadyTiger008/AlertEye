@@ -301,7 +301,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex h-screen">
+    <main className="flex flex-col sm:flex-row h-screen">
       {/* Left division - webcam and canvas */}
       <div className="relative">
         <div className="relative h-screen w-full">
@@ -340,7 +340,7 @@ export default function Home() {
           {/* bottom section */}
           <div className="flex flex-col gap-2"></div>
           <Separator className='my-2' />
-          <Popover asChild>
+          <Popover>
             <PopoverTrigger>
               <Button variant='outline' size='icon'>
                 <Volume2/>
